@@ -1,0 +1,44 @@
+
+h1 {
+  font-size: 50px;
+}
+.container {
+  width: 100%;
+  margin-top: 30px;
+  background: lightgray;
+  
+}
+.form {
+  margin: auto;
+  padding-top: 20px;
+}
+#header {
+  background: black;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  border-bottom: 3px solid gray;
+}
+#box-left{
+  margin-left: 120px;
+  text-align: center;
+}
+#box-center,
+#box-right {
+  box-sizing: border-box;
+  margin-left: 20px;
+  text-align: center;
+}
+#start-row {
+  margin-top: 20px;
+}
+#chat-box {
+  margin-top: 20px;
+}
+.display-boxes {
+  box-sizing: border-box;
+  height: 300px;
+  border: 3px solid blue;
+  border-radius: 15px;
+  margin-top: 20px;
+}
