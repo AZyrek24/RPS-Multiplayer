@@ -8,6 +8,7 @@ h1 {
   background: lightgray;
   
 }
+
 .form {
   margin: auto;
   padding-top: 20px;
@@ -41,4 +42,13 @@ h1 {
   border: 3px solid blue;
   border-radius: 15px;
   margin-top: 20px;
+}
+#rock1:hover,
+#rock2:hover,
+#paper1:hover,
+#paper2:hover,
+#scissors1:hover,
+#scissors2:hover {
+  background: blue;
+  color: white;
 }

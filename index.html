@@ -35,17 +35,17 @@
     <div class="row" style="margin: auto">
       <div class="col-lg-3 display-boxes" id="box-left">
         <div class="col-lg-12">
-          <h3>Player 1</h3>
+          <h4 id="player-1">Waiting for Player 1</h4>
         </div>
       </div>
       <div class="col-lg-3 display-boxes" id="box-center">
         <div class="col-lg-12">
-          <h3>Win Display</h3>
+          <h4>Win Display</h4>
         </div>
       </div>
       <div class="col-lg-3 display-boxes" id="box-right">
         <div class="col-lg-12">
-          <h3>Player 2</h3>
+          <h4 id="player-2">Waiting for Player 2</h4>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@
       <div class="col-lg-3"></div>
       <div class="col-lg-6" id="chat-box">
         <div class="form-group">
-          <textarea class="form-control" rows="3"></textarea>
+          <textarea class="form-control" id="message-display" rows="3"></textarea>
         </div>
       </div>
       <div class="col-lg-3"></div>
@@ -62,12 +62,12 @@
       <div class="col-lg-3"></div>
       <div class="col-lg-5">
         <form>
-          <div class="form-group" id="chat-display">
+          <div class="form-group" id="new-message">
             <input type="text" class="form-control sm" id="chat-input">
           </div>
         </form>
       </div>  
-      <div class="col-lg-1">
+      <div class="col-lg-1" id="chat-button">
         <button type="text" class="btn btn-success" id="get-message">Send</button>
       </div>
       <div class="col-lg-3"></div>
