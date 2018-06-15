@@ -21,7 +21,7 @@
     <div class="row" id="start-row">
       <div class="col-lg-4"></div>
       <div class="col-lg-3">
-        <form>
+        <form id="start">
           <div class="form-group" id="name-form">
             <input type="text" class="form-control" id="player-name" placeholder="Name">
           </div>
@@ -40,7 +40,7 @@
       </div>
       <div class="col-lg-3 display-boxes" id="box-center">
         <div class="col-lg-12">
-          <h4>Win Display</h4>
+          <span id="win-display"></span>
         </div>
       </div>
       <div class="col-lg-3 display-boxes" id="box-right">
@@ -53,7 +53,7 @@
       <div class="col-lg-3"></div>
       <div class="col-lg-6" id="chat-box">
         <div class="form-group">
-          <textarea class="form-control" id="message-display" rows="3"></textarea>
+          <textarea readonly class="form-control" id="message-display" rows="3"></textarea>
         </div>
       </div>
       <div class="col-lg-3"></div>
@@ -66,7 +66,7 @@
             <input type="text" class="form-control sm" id="chat-input">
           </div>
         </form>
-      </div>  
+      </div>
       <div class="col-lg-1" id="chat-button">
         <button type="text" class="btn btn-success" id="get-message">Send</button>
       </div>
@@ -75,9 +75,11 @@
   </div>
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
   <!-- Javascript -->
   <script src="assets/javascript/rps.js"></script>
 </body>
+
+</html>
