@@ -67,7 +67,7 @@ $(document).ready(function () {
     //Store chat text to firebase.database /chat
     //Update chat display when firebase chat data is changed
   })  
-
+  //Checks that there are two players and runs start game functions for each player box
   function checkNumPlayers() {
     if (currentNumPlayers === numPlayers) {
       startGamePlayer1();
