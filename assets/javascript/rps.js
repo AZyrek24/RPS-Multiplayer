@@ -36,6 +36,7 @@ $(document).ready(function () {
       database.ref('users/' + playerId1).set({
         wins: 0,
         losses: 0,
+        pick: "",
         chat: ""
       });
       $("#player-1").text("Player 1: " + playerId1.toUpperCase());
@@ -50,6 +51,7 @@ $(document).ready(function () {
       database.ref('users/' + playerId2).set({
         wins: 0,
         losses: 0,
+        pick: "",
         chat: ""
       });
       $("#player-2").text("Player 2: " + playerId2.toLocaleUpperCase());
@@ -62,12 +64,9 @@ $(document).ready(function () {
   })
 
   $("#chat-button").on("click", function () {
-    database = firebase.database();
-    var chatText = $("#chat-input").val().trim();
-    $("#message-display").prepend("\n" + chatText);
-  })
-
-  
+    //Store chat text to firebase.database /chat
+    //Update chat display when firebase chat data is changed
+  })  
 
   function checkNumPlayers() {
     if (currentNumPlayers === numPlayers) {
@@ -76,6 +75,8 @@ $(document).ready(function () {
     }
   }
   function startGamePlayer1() {
+    //If statement goes here/checks which player is the user at this terminal and displays choices only for this user
+
     $("#box-left").append("<br><h5 id='rock1'>Rock</h5>");
     $("#box-left").append("<br><h5 id='paper1'>Paper</h5>");
     $("#box-left").append("<br><h5 id='scissors1'>Scissors</h5>");
@@ -83,9 +84,19 @@ $(document).ready(function () {
 
   }
   function startGamePlayer2() {
+    //If statement goes here/checks which player is the user at this terminal and displays choices only for this user
+
     $("#box-right").append("<br><h5 id='rock2'>Rock</h5>");
     $("#box-right").append("<br><h5 id='paper2'>Paper</h5>");
     $("#box-right").append("<br><h5 id='scissors2'>Scissors</h5>");
     $("#box-right").append("<br><h6 id='wins-loss-1'>Wins: " + player2wins + " Losses: " + player2losses)
   }
+
+  //Code goes here that stores a user's pick to firebase
+
+  //Code goes here that checks each user's picks and increases win/loss counters accordingly in firebase
+  //Code goes here to display in center box who won round, updates win/loss displays in each player's boxes
+
+  //Code goes here to erase a user that disconnects and updates html to wait for a new player
+  //Clear chatbox when there is a disconnect 
 });
