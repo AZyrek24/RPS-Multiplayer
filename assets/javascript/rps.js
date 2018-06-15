@@ -64,7 +64,7 @@ $(document).ready(function () {
   $("#chat-button").on("click", function () {
     database = firebase.database();
     var chatText = $("#chat-input").val().trim();
-    $("#message-display").html("<h5>" + chatText + "</h5>");
+    $("#message-display").prepend("\n" + chatText);
   })
 
   

@@ -3,7 +3,7 @@ h1 {
   font-size: 50px;
 }
 form {
-  overflow: auto;
+  overflow: fixed;
 }
 .container {
   width: 100%;
